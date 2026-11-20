@@ -25,6 +25,7 @@ public class LimitedPlatformerMovement : MonoBehaviour
     private Vector2 moveInput;
     private bool jumpInput;
     public Animator Anim;
+    public AudioSource Sound;
     private Rigidbody2D rb;
     private BoxCollider2D groundCheckCollider; 
 
@@ -51,6 +52,8 @@ public class LimitedPlatformerMovement : MonoBehaviour
         if (jumpInput && IsGrounded())
         {
             rb.linearVelocityY = jumpForce;
+            Sound.pitch = Random.Range(0.8f, 1.2f);
+            Sound.Play();
         }
         jumpInput = false; // only jump once for each press of the jump-button
     }
