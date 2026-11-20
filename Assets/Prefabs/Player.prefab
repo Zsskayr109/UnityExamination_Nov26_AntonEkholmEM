@@ -69,7 +69,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -152,6 +152,7 @@ GameObject:
   - component: {fileID: 3224703973515527075}
   - component: {fileID: 4027071437941181904}
   - component: {fileID: 4678485838174643120}
+  - component: {fileID: 3277537925346876631}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -388,3 +389,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LimitedPlatformerMovement
   maxSpeed: 10
   jumpForce: 10
+  Anim: {fileID: 3277537925346876631}
+--- !u!95 &3277537925346876631
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974082913528302013}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bff4cd74e1b2c924b99bafa587ec84b0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

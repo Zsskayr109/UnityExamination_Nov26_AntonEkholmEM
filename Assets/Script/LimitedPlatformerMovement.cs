@@ -24,7 +24,7 @@ public class LimitedPlatformerMovement : MonoBehaviour
     
     private Vector2 moveInput;
     private bool jumpInput;
-    
+    public Animator Anim;
     private Rigidbody2D rb;
     private BoxCollider2D groundCheckCollider; 
 
@@ -39,7 +39,14 @@ public class LimitedPlatformerMovement : MonoBehaviour
     {
         // Apply horizontal velocity from input
         rb.linearVelocityX = moveInput.x * maxSpeed;
-        
+        if (rb.linearVelocityX != 0)
+        {
+            Anim.SetBool("IsRuning", true);
+        }
+        else
+        {
+            Anim.SetBool("IsRuning", false);
+        }
         // Apply vertical velocity from jump
         if (jumpInput && IsGrounded())
         {
