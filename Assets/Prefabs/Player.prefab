@@ -261,7 +261,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3225003795840026714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -387,8 +387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8db9a49be2070674cba225a9861feea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LimitedPlatformerMovement
-  maxSpeed: 10
-  jumpForce: 10
+  maxSpeed: 4
+  jumpForce: 5
   Anim: {fileID: 3277537925346876631}
 --- !u!95 &3277537925346876631
 Animator:
