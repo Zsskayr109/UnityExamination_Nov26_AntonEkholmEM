@@ -1,7 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
-            /////////////// INFORMATION ///////////////
+/////////////// INFORMATION ///////////////
 // SETUP:
 // Add the script to the object you want the player to control
 
@@ -58,6 +59,10 @@ public class LimitedPlatformerMovement : MonoBehaviour
         jumpInput = false; // only jump once for each press of the jump-button
     }
 
+    public void changer(string Secene)
+    {
+        SceneManager.LoadScene(Secene);
+    }
     private bool IsGrounded()
     {
         // Is our groundCheckCollider touching the groundLayer? If so, return the value "true"
